@@ -9,7 +9,9 @@
 <body>
     <nav id="navbar">
         <header>Python Documentation</header>
-        <ul>
+        <!-- Fix this to show menu properly -->
+        <button id="hamburger" onclick="showMenu()">Hello</button>
+        <ul id="menu">
             <a class="nav-link" href="#Introduction" rel=internal>
                 <li>Introduction</li>
             </a>
@@ -135,8 +137,7 @@ else:
                     <li>
                         <div><span class="list-title">For</span>
                             <p>For loops have the following syntax:</p>
-                            <code>fruits = ["apple", "banana", "cherry"]
-for x in fruits:
+                            <code>for x in list_var:
     print(x)</code>
                             <p></p>
                         </div>
@@ -168,5 +169,11 @@ while i < 6:
     </main>
 </body>
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-
+<script type='text/javascript'>
+    // Fix to show menu correctly
+    const showMenu = () => {
+        let menu = document.querySelector("#menu");
+        document.querySelector("#menu").style.display = document.querySelector("#menu").style.display === 'none' ? '' : 'none';
+    }
+</script>
 </html>

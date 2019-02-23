@@ -1,0 +1,92 @@
+@import "https://fonts.googleapis.com/css?family=Lato:400,700";
+
+body{
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+}
+
+#navbar{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    width: 30vw;
+    max-width: 350px;
+    z-index: 1;
+}
+
+#navbar a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0.5rem;
+}
+
+#main-doc{
+    padding: 2rem;
+    margin-left: 400px;
+}
+
+/* FIX THIS */
+#hamburger{
+    display: none;
+}
+
+@media screen and (max-width: 700px){
+    #navbar{
+        width: 100vw;
+        max-width: none;
+        height: auto;
+    }
+
+    #menu{
+        display: none;
+    }
+
+    #main-doc{
+        width: 90vw;
+        margin-left: 0;
+        margin-top: 10vh;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 701px){
+    #main-doc{
+        padding: 2rem;
+        margin-left: 35vw;
+    }
+}
+
+header{
+    font-size: 2rem;
+}
+
+.main-section li{
+    list-style: none;
+}
+
+.list-title{
+    font-size: 1.4rem;
+}
+
+code{
+    display: block;
+    text-align: left;
+    white-space: pre;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
